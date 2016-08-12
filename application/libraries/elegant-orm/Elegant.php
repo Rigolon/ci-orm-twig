@@ -25,7 +25,7 @@ class Elegant {
 		while (false !== ($filename = readdir($handle)))
 		{
 			if($filename == "." or $filename == "..") continue;
-			if(preg_match('@^Ci_@', $filename)) continue;
+			if(preg_match('@^ci_@i', $filename)) continue;
 
 			$filepath = $dirpath.$filename;
 			if(is_dir($filepath))
